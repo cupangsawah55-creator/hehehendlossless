@@ -1,7 +1,7 @@
 import { createBitChordAuth } from "./bitchord-addon-auth.mjs";
 
 const auth = createBitChordAuth({
-  hosts: ["hehehend.cupangsawah55.workers.dev"]
+  hosts: ["hehehendlossless.cupangsawah55.workers.dev"]
 });
 
 function json(data, status = 200) {
