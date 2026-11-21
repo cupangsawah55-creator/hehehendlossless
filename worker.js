@@ -26,6 +26,16 @@ export default {
       });
     }
 
+    if (url.pathname === "/manifest.json" && request.method === "GET") {
+  return json({
+    id: "com.cupangsawah55.hehehendlossless",
+    name: "HEHEHEND LOSSLESS",
+    version: "2.1.0",
+    resources: ["search", "stream"],
+    bitchordAuth: true
+  });
+}
+    
     if (url.pathname === "/__auth-check") {
       if (request.method !== "GET") {
         return json({ error: "Method not allowed" }, 405);
